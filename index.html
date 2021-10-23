@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Eclipton</title>
   </head>
   <body>
@@ -25,17 +27,17 @@
         </div>
       </nav>
       <div class="main-text">
-        <h1>Title Comes Here</h1>
-        <h2>Simpler. Safer. Social</h2>
-        <button>Get Started</button>
+        <h1 data-aos="fade-up">Title Comes Here</h1>
+        <h2 data-aos="fade-up">Simpler. Safer. Social</h2>
+        <button data-aos="fade-up">Get Started</button>
       </div>
     </div>
     <!-- be social -->
     <div class="besocial-container">
-      <div class="social-img">
+      <div data-aos="fade-right" class="social-img">
         <img src="./images/Group 86.png" alt="" />
       </div>
-      <div class="besocial-text">
+      <div data-aos="fade-left" class="besocial-text">
         <h3>Tagline comes here</h3>
         <h2>Be Social</h2>
         <p>
@@ -47,7 +49,7 @@
     </div>
     <!-- blog section -->
     <div class="blog-section">
-      <div class="blog-text">
+      <div data-aos="fade-left" class="blog-text">
         <h3 class="tagline">Tagline Comes here</h3>
         <h2>Blog</h2>
         <div class="blogs">
@@ -63,19 +65,19 @@
         <p>With our tech, we enable every business to be a provider of</p>
         <button class="explorebtn">Explore</button>
       </div>
-      <div class="blogimg-quote">
+      <div data-aos="fade-right" class="blogimg-quote">
         <img src="./images/Group 87.png" alt="" />
         <h2 class="quote">“ Quote Comes here”</h2>
       </div>
     </div>
     <!-- passionomy -->
     <div class="passion-container">
-      <div class="passion-img">
+      <div data-aos="fade-right" class="passion-img">
         <img src="./images/passion.png" alt="" />
         <h2 class="quote">“ Quote Comes here”</h2>
         <h3 class="quote">“ Quote Comes here”</h3>
       </div>
-      <div class="passion-text">
+      <div data-aos="fade-left" class="passion-text">
         <h4 class="tagline">Tagline comes here</h4>
         <h1>Passionnomy</h1>
         <ul>
@@ -92,7 +94,7 @@
     </div>
     <!-- exchage section -->
     <div class="exchange-section">
-      <div class="explore-text">
+      <div data-aos="zoom-in" class="explore-text">
         <h3 class="tagline">Tagline comes here</h3>
         <h1>Explore</h1>
         <p>
@@ -105,7 +107,7 @@
         </p>
         <button class="explorebtn">Explore</button>
       </div>
-      <div class="card">
+      <div data-aos="zoom-in" class="card">
         <h2>P2P</h2>
         <p>
           With our tech, we enable every business to be a provider of financial
@@ -116,7 +118,7 @@
           <h5>Get Started</h5>
         </a>
       </div>
-      <div class="card row2card">
+      <div data-aos="zoom-in" class="card row2card">
         <h2>Lending</h2>
         <p>
           With our tech, we enable every business to be a provider of financial
@@ -127,7 +129,7 @@
           <h5>Get Started</h5>
         </a>
       </div>
-      <div class="card row2card">
+      <div data-aos="zoom-in" class="card row2card">
         <h2>Borrowing</h2>
         <p>
           With our tech, we enable every business to be a provider of financial
@@ -138,7 +140,7 @@
           <h5>Get Started</h5>
         </a>
       </div>
-      <div class="card row2card">
+      <div data-aos="zoom-in" class="card row2card">
         <h2>Stacking</h2>
         <p>
           With our tech, we enable every business to be a provider of financial
@@ -152,10 +154,10 @@
     </div>
     <!-- license section -->
     <div class="licensed-section">
-      <div class="licensed-img">
+      <div data-aos="fade-up-right" class="licensed-img">
         <img src="./images/license.png" alt="" />
       </div>
-      <div class="licensed-text">
+      <div data-aos="fade-up-left" class="licensed-text">
         <h4 class="tagline">Tagline comes here</h4>
         <h2>
           Keep Moving Forward <br />
@@ -166,11 +168,11 @@
         </p>
         <div class="count">
           <div class="item">
-            <h4>+350</h4>
+            <h4>+<span data-target="350" class="counter">0</span></h4>
             <h5 class="tagline">Tagline comes here</h5>
           </div>
           <div class="item">
-            <h4>+249</h4>
+            <h4>+<span data-target="249" class="counter">0</span></h4>
             <h5 class="tagline">Tagline comes here</h5>
           </div>
         </div>
@@ -178,7 +180,7 @@
     </div>
 
     <!-- Get in touch area -->
-    <div class="get-in-touch">
+    <div data-aos="fade-up" data-aos-duration="1000" class="get-in-touch">
       <h4>Get in touch with our experts</h4>
       <form>
         <div class="details-grid">
@@ -238,5 +240,12 @@
         <p class="copyright">Copyright © 2021 Eclipton | All rights reserved</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
