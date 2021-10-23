@@ -3,7 +3,7 @@ const countersection = document.querySelector(".licensed-section");
 const speed = 200; // The lower the slower
 let flag = false;
 countersection.addEventListener("mouseover", () => {
-  if (!flag) {
+  if (!flag && window.innerWidth >= 768) {
     counters.forEach((counter) => {
       const updateCount = () => {
         const target = +counter.getAttribute("data-target");
@@ -24,3 +24,8 @@ countersection.addEventListener("mouseover", () => {
     flag = true;
   }
 });
+if (window.innerWidth < 768) {
+  counters.forEach((counter) => {
+    counter.innerText = counter.getAttribute("data-target");
+  });
+}
